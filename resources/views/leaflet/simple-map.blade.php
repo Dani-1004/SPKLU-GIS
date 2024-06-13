@@ -30,7 +30,7 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <script>
-        const map = L.map('map').setView([-5.129541583080711, 113.62957770241515], 4);
+        const map = L.map('map').setView([-6.178306, 106.631889], 12);
 
         const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,

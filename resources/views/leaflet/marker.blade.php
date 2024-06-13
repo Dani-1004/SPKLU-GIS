@@ -30,7 +30,7 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <script>
-        const map = L.map('map').setView([-5.129541583080711, 113.62957770241515], 4);
+        const map = L.map('map').setView([-6.178306, 106.631889], 12);
 
         const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
@@ -42,18 +42,18 @@
             iconSize:[50,50],
         })
 
-        var marker = L.marker([-5.129541583080711, 113.62957770241515],{
-            icon:iconMarker,
-            draggable:true
+        var marker2 = L.marker([-6.193096141144581, 106.63365975360928],{
+            //icon:iconMarker,
+            draggable:false
         })
-        .bindPopup('Tampilan pesan disini 1')
+        .bindPopup('SPKLU TangCity')
         .addTo(map);
 
-        var marker2 = L.marker([-1.2761076471197752, 116.82459558367206],{
+        var marker3 = L.marker([-6.1440077,106.630585],{
             //icon:iconMarker,
-            draggable:true
+            draggable:false
         })
-        .bindPopup('Tampilan pesan disini 2')
+        .bindPopup('SPKLU Plaza Aeropolis')
         .addTo(map);
 
         

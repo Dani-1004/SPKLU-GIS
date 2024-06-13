@@ -121,12 +121,11 @@
             <ul class="nav flex-column pt-3 pt-md-0">
 
                 <li class="nav-item">
-                    <a href="../../index.html" class="nav-link d-flex align-items-center">
-                        <span class="sidebar-icon">
-                            <img src="{{ asset('volt/html&css/assets/img/brand/light.svg') }}" height="20"
-                                width="20" alt="Volt Logo">
-                        </span>
-                        <span class="mt-1 ms-1 sidebar-text">Volt Overview</span>
+                    <span class="sidebar-icon">
+                        <img src="{{ asset('volt/html&css/assets/img/brand/light.svg') }}" height="20"
+                            width="20" alt="Volt Logo">
+                    </span>
+                    <span class="mt-1 ms-1 sidebar-text">Find SPKLU</span>
                     </a>
                 </li>
 
@@ -165,15 +164,6 @@
                                 </a>
                             </li>
 
-                            <li class="nav-item {{ Request::is('simple-map') ? 'active' : '' }}">
-                                <a href="{{ route('simple-map') }}" class="nav-link ">
-                                    <span class="sidebar-icon ">
-                                        <i class="fas fa-map"></i>
-                                    </span>
-                                    <span class="sidebar-text">Simple Map</span>
-                                </a>
-                            </li>
-
                             <li class="nav-item 
                             {{ Request::is('markers') ? 'active' : '' }}
                             ">
@@ -184,96 +174,7 @@
                                     <span class="sidebar-text">Markers</span>
                                 </a>
                             </li>
-
-                            <li class="nav-item 
-                            {{ Request::is('circle') ? 'active' : '' }}
-                            ">
-                                <a href="{{ route('circle') }}" class="nav-link ">
-                                    <span class="sidebar-icon">
-                                        <i class="fas fa-circle"></i>
-                                    </span>
-                                    <span class="sidebar-text">Circle</span>
-                                </a>
-                            </li>
             
-                            <li class="nav-item 
-                            {{ Request::is('polygon') ? 'active' : '' }}
-                            ">
-                                <a href="{{ route('polygon') }}" class="nav-link ">
-                                    <span class="sidebar-icon">
-                                        <i class="fas fa-draw-polygon"></i>
-                                    </span>
-                                    <span class="sidebar-text">Polygon</span>
-                                </a>
-                            </li>
-            
-                            <li class="nav-item 
-                            {{ Request::is('polyline') ? 'active' : '' }}
-                            ">
-                                <a href="{{ route('polyline') }}" class="nav-link ">
-                                    <span class="sidebar-icon">
-                                        <i class="fas fa-draw-polygon"></i>
-                                    </span>
-                                    <span class="sidebar-text">Polyline</span>
-                                </a>
-                            </li>
-            
-                            <li class="nav-item 
-                            {{ Request::is('rectangle') ? 'active' : '' }}
-                            ">
-                                <a href="{{ route('rectangle') }}" class="nav-link ">
-                                    <span class="sidebar-icon">
-                                        <i class="fas fa-draw-polygon"></i>
-                                    </span>
-                                    <span class="sidebar-text">Rectangle</span>
-                                </a>
-                            </li>
-            
-                            <li class="nav-item 
-                            {{ Request::is('layer') ? 'active' : '' }}
-                            ">
-                                <a href="{{ route('layer') }}" class="nav-link ">
-                                    <span class="sidebar-icon">
-                                        <i class="fas fa-draw-polygon"></i>
-                                    </span>
-                                    <span class="sidebar-text">Layer Control</span>
-                                </a>
-                            </li>
-            
-                            <li
-                                class="nav-item 
-                            {{ Request::is('layer-group') ? 'active' : '' }}
-                            ">
-                                <a href="{{ route('layer-group') }}" class="nav-link ">
-                                    <span class="sidebar-icon">
-                                        <i class="fas fa-draw-polygon"></i>
-                                    </span>
-                                    <span class="sidebar-text">Layer Group</span>
-                                </a>
-                            </li>
-            
-                            <li class="nav-item 
-                            {{ Request::is('geojson') ? 'active' : '' }}
-                            ">
-                                <a href="{{ route('geojson') }}" class="nav-link ">
-                                    <span class="sidebar-icon">
-                                        <i class="fas fa-draw-polygon"></i>
-                                    </span>
-                                    <span class="sidebar-text">Geojson</span>
-                                </a>
-                            </li>
-            
-                            <li
-                                class="nav-item 
-                            {{ Request::is('getCoordinate') ? 'active' : '' }}
-                            ">
-                                <a href="{{ route('getCoordinate') }}" class="nav-link ">
-                                    <span class="sidebar-icon">
-                                        <i class="fas fa-draw-polygon"></i>
-                                    </span>
-                                    <span class="sidebar-text">Get Coordinate</span>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </li>
